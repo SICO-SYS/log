@@ -64,11 +64,19 @@ func LogErrMsg(s int8, fn string) {
 	case 10:
 		msg += "Redis operation error"
 	case 11:
-		msg += "Redis unknown error"
-	case 12:
 		msg += "Redis value parse error"
+	case 19:
+		msg += "Redis Unknown error"
+	case 20:
+		msg += "Mongo operation error"
+	case 21:
+		msg += "Mongo value parse error"
+	case 22:
+		msg += "Mongo Create Index error"
+	case 29:
+		msg += "Mongo Unknown error"
 	default:
-		msg = "Undefine"
+		msg += "Undefine"
 
 	}
 	LogProduce("error", time.Now().Format("2006-01-02 15:04:05")+" "+fn+" "+msg)
