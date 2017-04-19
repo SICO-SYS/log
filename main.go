@@ -60,7 +60,7 @@ func LogErrMsg(s int8, fn string) {
 	case 4:
 		msg += "Cannot open mq connect"
 	case 5:
-		msg += "Cannot open grpc connect"
+		msg += "Cannot open gRPC connect"
 	case 10:
 		msg += "Redis operation error"
 	case 11:
@@ -75,6 +75,10 @@ func LogErrMsg(s int8, fn string) {
 		msg += "Mongo Create Index error"
 	case 29:
 		msg += "Mongo Unknown error"
+	case 50:
+		msg += "gRPC Callback error"
+	case 59:
+		msg += "gRPC Unknown error"
 	default:
 		msg += "Undefine"
 
