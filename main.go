@@ -51,15 +51,15 @@ func LogWarnMsg(s int8, fn string) {
 func LogErrMsg(s int8, fn string) {
 	msg := "[Error] "
 	switch s {
-	case 0:
-		msg += "Cannot open redis connect"
 	case 1:
-		msg += "Cannot open mongo connect"
+		msg += "Cannot open redis connect"
 	case 2:
-		msg += "Cannot open mysql connect"
+		msg += "Cannot open mongo connect"
 	case 3:
-		msg += "Cannot open mq connect"
+		msg += "Cannot open mysql connect"
 	case 4:
+		msg += "Cannot open mq connect"
+	case 5:
 		msg += "Cannot open grpc connect"
 	case 10:
 		msg += "Redis operation error"
