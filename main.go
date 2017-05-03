@@ -91,7 +91,7 @@ func LogFatalMsg(s int8, fn string) {
 	msg := "[fatal] "
 	switch s {
 	case 0:
-		msg += "Cannot open redis connect"
+		msg += "Cannot Parse json file"
 	default:
 		msg = "Undefine"
 
