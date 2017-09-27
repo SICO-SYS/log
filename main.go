@@ -13,7 +13,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/SiCo-DevOps/cfg"
+	"github.com/SiCo-Ops/cfg"
 )
 
 var (
